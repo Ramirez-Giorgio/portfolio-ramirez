@@ -7,24 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li class="dropdown">
-                    <a href="#progetti">Progetti</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#progetto1">Mafia</a></li>
-                        <li><a href="#progetto2">Codice Fiscale</a></li>
-                        <li><a href="#progetto3">Progetto 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#competenze">Competenze</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#progetti">Progetti</a>
+                <ul class="dropdown-content">
+                    <li><a href="#progetto1">Mafia</a></li>
+                    <li><a href="#progetto2">Codice Fiscale</a></li>
+                </ul>
+            </li>
+            <li><a href="#competenze">Competenze</a></li>
+        </ul>
+    </div>
     
-    <aside class="sidebar">
+    <div class="sidebar">
         <div class="sidebar-content">
             <h2>Informazioni</h2>
             <p><strong>Nome:</strong> Ramirez Giorgio</p>
@@ -32,15 +29,15 @@
             <p><strong>GitHub:</strong> <a href="https://github.com/Ramirez-Giorgio" target="_blank">github.com/Ramirez-Giorgio</a></p>
             <p><strong>Località:</strong> Torino,To</p>
         </div>
-    </aside>
+    </div>
 
-    <section id="home" class="section">
+    <div id="home" class="section">
         <div class="container">
             <div class="profile-box">
                 <img src="foto-test.jpg" alt="La tua foto" class="profile-image">
             </div>
             <h1>Ciao, sono Ramirez Giorgio</h1>
-            <p>Benvenuto nel mio portfolio. Qua troverai alcuni dei miei lavori/competenze riguardo educazione civica <br>e le competenze che ho acquisito nelle materie d'indirizzo.</p>
+            <p>Benvenuto nel mio portfolio. Qua troverai alcuni dei miei lavori/competenze riguardo educazione civica e le competenze che ho acquisito nelle materie d'indirizzo.</p>
             <div class="teaser">
                 <div class="teaser-item">
                     <img src="mafia.avif" alt="Mafia" class="teaser-image">
@@ -50,25 +47,22 @@
                     <img src="codice-fiscale.jpg" alt="Codice Fiscale" class="teaser-image">
                     <div class="teaser-text">Codice Fiscale</div>
                 </div>
-                <div class="teaser-item">
-                    <img src="progetto3.jpg" alt="Progetto 3" class="teaser-image">
-                    <div class="teaser-text">Progetto 3</div>
-                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="progetti" class="section">
+    <div id="progetti" class="section">
         <div class="container">
             <h2>Progetti</h2>
             <div id="progetto1" class="project">
                 <h3>Mafia</h3>
-                <p>Per la materia di italiano abbiamo parlato della mafia, della criminalità organizzata.</p>
+                <p>Per la materia di italiano abbiamo parlato della mafia, della criminalità organizzata.<br>
+                    abbiamo parlato delle figure che erano più conosciute e dei reati in cui sono stati commessi sotto loro comando.</p>
             </div>
             <div id="progetto2" class="project">
                 <h3>Codice Fiscale</h3>
-                <p>per la materia di Informatica abbiamo fatto in linguaggio di programmazione c il codice fiscale <br>e questo è il mio codice commentato di come l'ho fatto e strutturato io
-                <br>CODICE:<br>
+                <p>Per la materia di Informatica abbiamo fatto in linguaggio di programmazione C il codice fiscale e questo è il mio codice commentato di come l'ho fatto e strutturato io.</p>
+                <br>
                 <cod>
                     <pre>
 #include &ltstdio.h&gt
@@ -333,38 +327,44 @@ int main() {
 
     return 0;
 }
-
+                        
                     </pre>
                 </cod>
-                </p>
-            </div>
-            <div id="progetto3" class="project">
-                <h3>Progetto 3</h3>
-                <p>Descrizione del progetto 3.</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="competenze" class="section">
+    <div id="competenze" class="section">
         <div class="container">
             <h2>Competenze</h2>
             <p>Qui ci sono le competenze che ho acquisito riguardo le materie d'indirizzo:</p>
             <br>
-            riguardo la materia TPSI:
+            <h3>TPSI</h3>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>Linguaggio C</li>
+                <li>Uso di GitHub</li>
             </ul>
             <br>
-            riguardo la materia Sistemi e Reti:
+            <h3>Sistemi e Reti</h3>
             <ul>
                 <li>Struttura di un computer</li>
                 <li>Uso di Linux</li>
                 <li>Uso di Arduino</li>
             </ul>
+            <br>
+            <h3>Informatica</h3>
+            <ul>
+                <li>Uso dei flowchart con flowgorithm</li>
+                <li>uso di c:</li>
+                <li>-funzioni</li>
+                <li>-uso dei vari cicli</li>
+                <li>-uso dei file</li>
+                <li>-uso di array bidimensionali, di carattere e di numeri</li>
+                <li>-uso dei vettori</li>
+            </ul>
         </div>
-    </section>
+    </div>
 
     <footer>
         <p>&copy; 2025 Ramirez Giorgio. Tutti i diritti riservati.</p>
