@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio di educazione civica di Ramirez Giorgio - 4 INFO">
+    <meta name="keywords" content="portfolio, educazione civica, mafia, codice fiscale, informatica">
+    <title>Portfolio Educazione Civica - Ramirez Giorgio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style3inf.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span>Ramirez Giorgio Portfolio</span>
+            </div>
+            <button class="menu-toggle" aria-label="Apri/Chiudi menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-ellipsis-h"></i> Altro <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="../pages/3info.html"><i class="fas fa-users"></i> 3 INFO</a></li>
+                        <li><a href="../index.html"><i class="fas fa-user-graduate"></i> 4 INFO</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-project-diagram"></i> Progetti <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#progetto1" class="project-link" data-target="progetto1"><i class="fas fa-user-secret"></i> Mafia</a></li>
+                        <li><a href="#progetto2" class="project-link" data-target="progetto2"><i class="fas fa-id-card"></i> Codice Fiscale</a></li>
+                    </ul>
+                </li>
+                <li><a href="#competenze"><i class="fas fa-tools"></i> Competenze</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-info-circle"></i> Informazioni</h2>
+                <button class="sidebar-close" aria-label="Chiudi sidebar">x</button>
+            </div>
+            <div class="profile-mini">
+                <img src="../images/IMG_4801.JPG" alt="Foto profilo di Ramirez Giorgio">
+                <h3>Ramirez Giorgio</h3>
+                <p><i class="fas fa-graduation-cap"></i> Studente 4° INFO</p>
+            </div>
+            <div class="contact-info">
+                <p><strong><i class="fas fa-user"></i> Nome:</strong> Ramirez Giorgio</p>
+                <p><strong><i class="fas fa-envelope"></i> Email:</strong> <a href="mailto:giorgio.ramirez@outlook.it">giorgio.ramirez@outlook.it</a></p>
+                <p><strong><i class="fab fa-github"></i> GitHub:</strong> <a href="https://github.com/Ramirez-Giorgio" target="_blank" rel="noopener">Ramirez-Giorgio</a></p>
+                <p><strong><i class="fas fa-map-marker-alt"></i> Località:</strong> Torino, TO</p>
+                <p><strong><i class="fas fa-school"></i> Classe:</strong> 4 INFO</p>
+            </div>
+            <div class="sidebar-footer">
+                <p><i class="fas fa-book"></i> Portfolio Educazione Civica</p>
+                <p><i class="fas fa-calendar-alt"></i> Anno Scolastico 2025/2026</p>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Overlay per sidebar su mobile -->
+    <div class="sidebar-overlay"></div>
+
+    <main>
+        <!-- Sezione Home -->
+        <section id="home" class="section">
+            <div class="container">
+                <div class="hero">
+                    <div class="profile-box">
+                        <img src="../images/IMG_4801.JPG" alt="Foto profilo di Ramirez Giorgio" class="profile-image">
+                    </div>
+                    <div class="hero-text">
+                        <h1>Ciao, sono <span class="highlight">Ramirez Giorgio</span></h1>
+                        <p class="subtitle"> Benvenuto nel mio portfolio di Educazione Civica!</p>
+                        <p>Qui troverai i miei lavori riguardanti educazione civica e le competenze che ho acquisito nelle materie d'indirizzo informatico durante il quarto anno.</p>
+                        <a href="#progetti" class="btn"><i class="fas fa-arrow-down"></i> Vedi i miei progetti</a>
+                    </div>
+                </div>
+                
+                <div class="teaser-container">
+                    <div class="teaser">
+                        <div class="teaser-item">
+                            <div class="teaser-image-container">
+                                <img src="../images/mafia.avif" alt="Studio sulla mafia e criminalità organizzata" class="teaser-image">
+                                <div class="date-badge"><i class="fas fa-book"></i> Italiano</div>
+                            </div>
+                            <div class="teaser-content">
+                                <h3><i class="fas fa-user-secret"></i> Mafia e Criminalità Organizzata</h3>
+                                <p>Analisi delle principali organizzazioni criminali e delle loro attività illegali.</p>
+                                <button class="teaser-link project-link" data-target="progetto1">
+                                    <i class="fas fa-arrow-right"></i> Scopri di più
+                                </button>
+                            </div>
+                        </div>
+                        <div class="teaser-item">
+                            <div class="teaser-image-container">
+                                <img src="../images/codice-fiscale.jpg" alt="Calcolatore del codice fiscale in linguaggio C" class="teaser-image">
+                                <div class="date-badge"><i class="fas fa-laptop-code"></i> Informatica</div>
+                            </div>
+                            <div class="teaser-content">
+                                <h3><i class="fas fa-id-card"></i> Calcolatore Codice Fiscale</h3>
+                                <p>Programma in linguaggio <code class="inline-code">C</code> per il calcolo automatico del codice fiscale italiano.</p>
+                                <button class="teaser-link project-link" data-target="progetto2">
+                                    <i class="fas fa-arrow-right"></i> Scopri di più
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Progetti -->
+        <section id="progetti" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-project-diagram"></i> Progetti di Educazione Civica</h2>
+                
+                <!-- Navigazione progetti -->
+                <div class="project-nav">
+                    <button class="project-nav-btn active" data-target="progetto1">
+                        <i class="fas fa-user-secret"></i> Mafia
+                    </button>
+                    <button class="project-nav-btn" data-target="progetto2">
+                        <i class="fas fa-id-card"></i> Codice Fiscale
+                    </button>
+                </div>
+                
+                <!-- Progetto 1: Mafia -->
+                <div id="progetto1" class="project active-project">
+                    <div class="project-header">
+                        <h3><i class="fas fa-user-secret"></i> Mafia e Criminalità Organizzata</h3>
+                        <span class="project-tag"><i class="fas fa-book"></i> Italiano - Educazione Civica</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="../images/mafia.avif" alt="Rappresentazione della criminalità organizzata">
+                            <p class="image-caption"><i class="fas fa-info-circle"></i> La lotta alla criminalità organizzata è un tema centrale nell'educazione civica</p>
+                        </div>
+                        <div class="project-text">
+                            <h4><i class="fas fa-search"></i> Analisi del Fenomeno Mafioso</h4>
+                            <p>Per la materia di italiano abbiamo approfondito il tema della mafia e della criminalità organizzata in Italia.</p>
+                            
+                            <h4><i class="fas fa-book-open"></i> Contenuti Studiati</h4>
+                            <ul class="timeline">
+                                <li><strong><i class="fas fa-user-tie"></i> Figure Storiche:</strong> Analisi delle personalità più rappresentative della criminalità organizzata italiana</li>
+                                <li><strong><i class="fas fa-gavel"></i> Attività Illecite:</strong> Studio dei reati commessi sotto il loro comando e controllo</li>
+                                <li><strong><i class="fas fa-sitemap"></i> Organizzazioni Criminali:</strong> Differenze tra mafia, camorra, 'ndrangheta e sacra corona unita</li>
+                                <li><strong><i class="fas fa-shield-alt"></i> Strategie di Contrasto:</strong> Ruolo delle istituzioni nella lotta alla criminalità organizzata</li>
+                            </ul>
+                            
+                            <h4><i class="fas fa-exclamation-circle"></i> Importanza dello Studio</h4>
+                            <p>Comprendere la struttura e le dinamiche delle organizzazioni criminali è fondamentale per:</p>
+                            <ul>
+                                <li><i class="fas fa-brain"></i> Sviluppare una coscienza civile consapevole</li>
+                                <li><i class="fas fa-exclamation-triangle"></i> Riconoscere i pericoli della criminalità organizzata</li>
+                                <li><i class="fas fa-balance-scale"></i> Apprezzare il valore della legalità e dello stato di diritto</li>
+                                <li><i class="fas fa-users"></i> Diventare cittadini attivi nella lotta all'illegalità</li>
+                            </ul>
+                            
+                            <div class="project-conclusion">
+                                <h4><i class="fas fa-lightbulb"></i> Riflessione Personale</h4>
+                                <p>Questo studio mi ha permesso di comprendere l'importanza della memoria storica nella lotta alla criminalità e il ruolo che ogni cittadino può avere nel promuovere la legalità.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Progetto 2: Codice Fiscale -->
+                <div id="progetto2" class="project">
+                    <div class="project-header">
+                        <h3><i class="fas fa-id-card"></i> Calcolatore di Codice Fiscale in C</h3>
+                        <span class="project-tag"><i class="fas fa-laptop-code"></i> Informatica - Programmazione</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="../images/codice-fiscale.jpg" alt="Esempio di codice fiscale italiano">
+                            <p class="image-caption"><i class="fas fa-info-circle"></i> Il codice fiscale è un identificativo univoco per ogni cittadino italiano</p>
+                        </div>
+                        <div class="project-text">
+                            <h4><i class="fas fa-code"></i> Progetto di Programmazione</h4>
+                            <p>Per la materia di Informatica abbiamo sviluppato in linguaggio <code class="inline-code">C</code> un programma completo per il calcolo automatico del codice fiscale italiano.</p>
+                            
+                            <h4><i class="fas fa-cogs"></i> Funzionalità Implementate</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Validazione dei dati anagrafici inseriti</li>
+                                <li><i class="fas fa-calculator"></i> Calcolo delle parti del codice: cognome, nome, data di nascita, sesso, comune</li>
+                                <li><i class="fas fa-file-alt"></i> Gestione dei file per la ricerca del codice catastale</li>
+                                <li><i class="fas fa-key"></i> Calcolo del carattere di controllo finale</li>
+                                <li><i class="fas fa-bug"></i> Gestione degli errori e validazione input</li>
+                                <li><i class="fas fa-database"></i> Lettura da file dei comuni italiani</li>
+                                <li><i class="fas fa-shield-alt"></i> Validazione date e controllo anni bisestili</li>
+                            </ul>
+                            
+                            <h4><i class="fas fa-graduation-cap"></i> Competenze Sviluppate</h4>
+                            <ul>
+                                <li><i class="fas fa-c"></i> Programmazione strutturata in linguaggio <code class="inline-code">C</code></li>
+                                <li><i class="fas fa-font"></i> Gestione avanzata di stringhe e array</li>
+                                <li><i class="fas fa-database"></i> Lettura e scrittura su file</li>
+                                <li><i class="fas fa-project-diagram"></i> Implementazione di algoritmi complessi</li>
+                                <li><i class="fas fa-search"></i> Debugging e testing del software</li>
+                                <li><i class="fas fa-calculator"></i> Calcoli matematici e manipolazione dati</li>
+                                <li><i class="fas fa-file-code"></i> Gestione di strutture dati complesse</li>
+                            </ul>
+                            
+                            <h4><i class="fas fa-file-code"></i> Codice Sorgente Completo</h4>
+                            <p>Ecco il mio codice commentato che mostra come ho strutturato e implementato il programma completo:</p>
+                            
+                            <div class="code-container">
+                                <div class="code-header">
+                                    <h4 class="code-title"><i class="fas fa-file-code"></i> codice_fiscale.c (versione completa)</h4>
+                                    <button class="copy-btn"><i class="far fa-copy"></i> Copia Codice</button>
+                                </div>
+<pre><code><span class="code-preprocessor">#include</span> <span class="code-string">&lt;stdio.h&gt;</span>
+<span class="code-preprocessor">#include</span> <span class="code-string">&lt;string.h&gt;</span>
+<span class="code-preprocessor">#include</span> <span class="code-string">&lt;ctype.h&gt;</span>
+
+<span class="code-comment">// Funzione per verificare se un anno è bisestile</span>
+<span class="code-keyword">int</span> <span class="code-function">ControlloAnno</span>(<span class="code-keyword">int</span> anno) {
+    <span class="code-keyword">if</span> ((anno % <span class="code-number">4</span> == <span class="code-number">0</span> && anno % <span class="code-number">100</span> != <span class="code-number">0</span>) || (anno % <span class="code-number">400</span> == <span class="code-number">0</span>)) {
+        <span class="code-keyword">return</span> <span class="code-number">1</span>; <span class="code-comment">// Anno bisestile</span>
+    }
+    <span class="code-keyword">return</span> <span class="code-number">0</span>; <span class="code-comment">// Non è bisestile</span>
+}
+
+<span class="code-comment">// Funzione per verificare se una data è valida</span>
+<span class="code-keyword">int</span> <span class="code-function">ControlloData</span>(<span class="code-keyword">int</span> giorno, <span class="code-keyword">int</span> mese, <span class="code-keyword">int</span> anno) {
+    <span class="code-keyword">if</span> (mese &lt; <span class="code-number">1</span> || mese &gt; <span class="code-number">12</span> || giorno &lt; <span class="code-number">1</span> || giorno &gt; <span class="code-number">31</span>) {
+        <span class="code-keyword">return</span> <span class="code-number">0</span>; <span class="code-comment">// ridà 0 per la data non valida</span>   
+    }
+
+    <span class="code-keyword">if</span> ((mese == <span class="code-number">4</span> || mese == <span class="code-number">6</span> || mese == <span class="code-number">9</span> || mese == <span class="code-number">11</span>) && giorno &gt; <span class="code-number">30</span>) <span class="code-comment">// per i mesi che hanno 30 giorni</span> 
+    {
+        <span class="code-keyword">return</span> <span class="code-number">0</span>;
+    }
+    <span class="code-keyword">if</span> (mese == <span class="code-number">2</span>) {
+        <span class="code-keyword">if</span> (ControlloAnno(anno)) {
+            <span class="code-keyword">if</span> (giorno &gt; <span class="code-number">29</span>)<span class="code-comment">// Febbraio in anno bisestile</span>
+            {
+                <span class="code-keyword">return</span> <span class="code-number">0</span>;
+            }; 
+        } 
+        <span class="code-keyword">else</span> {
+            <span class="code-keyword">if</span> (giorno &gt; <span class="code-number">28</span>)<span class="code-comment">// Febbraio in anno non bisestile</span> 
+            {
+                <span class="code-keyword">return</span> <span class="code-number">0</span>;
+            };
+        }
+    }
+    <span class="code-keyword">return</span> <span class="code-number">1</span>; <span class="code-comment">// Data valida</span>
+}
+
+<span class="code-comment">// Funzione per estrarre le consonanti del cognome</span>
+<span class="code-keyword">void</span> <span class="code-function">estraiCons</span>(<span class="code-keyword">const</span> <span class="code-keyword">char</span> *input, <span class="code-keyword">char</span> *consonanti, <span class="code-keyword">int</span> maxConsonanti) {
+    <span class="code-keyword">int</span> consonantiTrovate = <span class="code-number">0</span>;<span class="code-comment">//lo inizializzo a 0</span>
+    <span class="code-keyword">for</span> (<span class="code-keyword">int</span> i = <span class="code-number">0</span>; input[i] != <span class="code-string">'\0'</span> && consonantiTrovate &lt; maxConsonanti; i++) { <span class="code-comment">//for per fargli prendere le consonanti</span>
+        <span class="code-keyword">char</span> c = <span class="code-function">toupper</span>(input[i]);<span class="code-comment">//mette tutto in maiscolo dentro il char c</span> 
+        <span class="code-keyword">if</span> ((c &gt;= <span class="code-string">'A'</span> && c &lt;= <span class="code-string">'Z'</span>) && !(c == <span class="code-string">'A'</span> || c == <span class="code-string">'E'</span> || c == <span class="code-string">'I'</span> || c == <span class="code-string">'O'</span> || c == <span class="code-string">'U'</span>)) {
+            consonanti[consonantiTrovate++] = c;
+        }
+    }
+    <span class="code-keyword">while</span> (consonantiTrovate &lt; maxConsonanti) {
+        consonanti[consonantiTrovate++] = <span class="code-string">'X'</span>; <span class="code-comment">// Riempie con 'X' se non ci sono abbastanza consonanti</span>
+    }
+    consonanti[consonantiTrovate] = <span class="code-string">'\0'</span>; <span class="code-comment">// Termina la stringa</span>
+}
+
+<span class="code-comment">// Funzione per calcolare le consonanti del nome</span>
+<span class="code-keyword">int</span> <span class="code-function">calcolaNome</span>(<span class="code-keyword">char</span> nome[], <span class="code-keyword">char</span> codice_fiscale[]) {
+    <span class="code-keyword">char</span> cons[<span class="code-number">25</span>] = {<span class="code-number">0</span>}, vocal[<span class="code-number">25</span>] = {<span class="code-number">0</span>};<span class="code-comment">//dichiaro l'array con dentro nulla</span>
+    <span class="code-keyword">int</span> cont_cons = <span class="code-number">0</span>, cont_vocal = <span class="code-number">0</span>;<span class="code-comment">//i contatori che poi userò in 2 if</span>
+
+    <span class="code-keyword">for</span> (<span class="code-keyword">int</span> i = <span class="code-number">0</span>; nome[i] != <span class="code-string">'\0'</span>; i++) {
+        <span class="code-keyword">char</span> c = <span class="code-function">toupper</span>(nome[i]);<span class="code-comment">//come nel congnome metto tutto in mauscolo</span>
+        <span class="code-keyword">if</span> ((c &gt;= <span class="code-string">'A'</span> && c &lt;= <span class="code-string">'Z'</span>)) { <span class="code-comment">//if per le lettere dalla A alla Z</span>
+            <span class="code-keyword">if</span> (c == <span class="code-string">'A'</span> || c == <span class="code-string">'E'</span> || c == <span class="code-string">'I'</span> || c == <span class="code-string">'O'</span> || c == <span class="code-string">'U'</span>) {
+                vocal[cont_vocal++] = c;<span class="code-comment">//se vocale A,E,I,O,U e il contatore aumenta</span>
+            } <span class="code-keyword">else</span> {
+                cons[cont_cons++] = c;<span class="code-comment">//stessa cosa ma per le consonanti</span>
+            }
+        }
+    }
+
+    <span class="code-keyword">if</span> (cont_cons &gt;= <span class="code-number">4</span>) {<span class="code-comment">// per i casi di 4 o più consonanti</span>
+        codice_fiscale[<span class="code-number">3</span>] = cons[<span class="code-number">0</span>];
+        codice_fiscale[<span class="code-number">4</span>] = cons[<span class="code-number">2</span>];
+        codice_fiscale[<span class="code-number">5</span>] = cons[<span class="code-number">3</span>];
+    } 
+    <span class="code-keyword">else</span> <span class="code-keyword">if</span> (cont_cons == <span class="code-number">3</span>) {<span class="code-comment">//invece per 3</span>
+        codice_fiscale[<span class="code-number">3</span>] = cons[<span class="code-number">0</span>];
+        codice_fiscale[<span class="code-number">4</span>] = cons[<span class="code-number">1</span>];
+        codice_fiscale[<span class="code-number">5</span>] = cons[<span class="code-number">2</span>];
+    } 
+    <span class="code-keyword">else</span> <span class="code-keyword">if</span> (cont_cons == <span class="code-number">2</span>) {<span class="code-comment">//per 2</span>
+        codice_fiscale[<span class="code-number">3</span>] = cons[<span class="code-number">0</span>];
+        codice_fiscale[<span class="code-number">4</span>] = cons[<span class="code-number">1</span>];
+        codice_fiscale[<span class="code-number">5</span>] = vocal[<span class="code-number">0</span>];
+    } 
+    <span class="code-keyword">else</span> <span class="code-keyword">if</span> (cont_cons == <span class="code-number">1</span> && cont_vocal &gt;= <span class="code-number">2</span>) {<span class="code-comment">//qua se è 1 e allora prende anche 2 vocali</span>
+        codice_fiscale[<span class="code-number">3</span>] = cons[<span class="code-number">0</span>];
+        codice_fiscale[<span class="code-number">4</span>] = vocal[<span class="code-number">0</span>];
+        codice_fiscale[<span class="code-number">5</span>] = vocal[<span class="code-number">1</span>];
+    } 
+    <span class="code-keyword">else</span> <span class="code-keyword">if</span> (cont_cons == <span class="code-number">1</span> && cont_vocal == <span class="code-number">1</span>) {<span class="code-comment">//stesso ma se c'è anche 1 sola vocale</span>
+        codice_fiscale[<span class="code-number">3</span>] = cons[<span class="code-number">0</span>];
+        codice_fiscale[<span class="code-number">4</span>] = vocal[<span class="code-number">0</span>];
+        codice_fiscale[<span class="code-number">5</span>] = <span class="code-string">'X'</span>;<span class="code-comment">//per riempire il buco di 1 mette una x</span>
+    } 
+    <span class="code-keyword">else</span> <span class="code-keyword">if</span> (cont_cons == <span class="code-number">0</span> && cont_vocal &gt;= <span class="code-number">2</span>) {<span class="code-comment">//qua invece se sono direttamente solo 2 vocali</span>
+        codice_fiscale[<span class="code-number">3</span>] = vocal[<span class="code-number">0</span>];
+        codice_fiscale[<span class="code-number">4</span>] = vocal[<span class="code-number">1</span>];
+        codice_fiscale[<span class="code-number">5</span>] = <span class="code-string">'X'</span>;<span class="code-comment">//quindi metterà pure qui una x</span>
+    } <span class="code-keyword">else</span> {
+        <span class="code-function">printf</span>(<span class="code-string">"Nome non valido.\n"</span>);<span class="code-comment">//se non soddisfa nulla</span>
+        <span class="code-keyword">return</span> <span class="code-number">0</span>;
+    }
+    <span class="code-keyword">return</span> <span class="code-number">1</span>;<span class="code-comment">// se ci sono errori e non prende nulla allora ritornerà 1 nel main e terminerà tutto</span>
+}
+
+<span class="code-comment">// Funzione per calcolare la parte del codice fiscale relativa alla data</span>
+<span class="code-keyword">void</span> <span class="code-function">calcolaData</span>(<span class="code-keyword">int</span> giorno, <span class="code-keyword">int</span> mese, <span class="code-keyword">int</span> anno, <span class="code-keyword">char</span> *cod_anno, <span class="code-keyword">char</span> *cod_mese, <span class="code-keyword">int</span> *cod_giorno) {
+    *cod_anno = (anno % <span class="code-number">100</span>) / <span class="code-number">10</span> + <span class="code-string">'0'</span>; <span class="code-comment">// per far si che prende le Ultime due cifre dell'anno</span>
+    *(cod_anno + <span class="code-number">1</span>) = (anno % <span class="code-number">10</span>) + <span class="code-string">'0'</span>;
+    *(cod_anno + <span class="code-number">2</span>) = <span class="code-string">'\0'</span>;<span class="code-comment">//cosi non prende le prime 2 come nel caso 2008 non prende 20 ma prende 08</span>
+
+    <span class="code-keyword">switch</span> (mese) {<span class="code-comment">//in base ad ogni caso il puntatore prende una lettera per il mese</span>
+        <span class="code-keyword">case</span> <span class="code-number">1</span>: 
+            *cod_mese = <span class="code-string">'A'</span>; 
+            <span class="code-keyword">break</span>;
+        <span class="code-keyword">case</span> <span class="code-number">2</span>:
+            *cod_mese = <span class="code-string">'B'</span>; 
+            <span class="code-keyword">break</span>;
+        <span class="code-keyword">case</span> <span class="code-number">3</span>:
+            *cod_mese = <span class="code-string">'C'</span>; 
+            <span class="code-keyword">break</span>;
+        <span class="code-keyword">case</span> <span class="code-number">4</span>: 
+            *cod_mese = <span class="code-string">'D'</span>; 
+            <span class="code-keyword">break</span>;
+        <span class="code-keyword">case</span> <span class="code-number">5</span>: 
+            *cod_mese = <span class="code-string">'E'</span>; 
+            <span class="code-keyword">break</span>;
+        <span class="code-keyword">case</span> <span class="code-number">6</span>: 
+            *cod_mese = <span class="code-string">'H'</span>; 
+            <span class="code-keyword">break</span>;
+        <span class="code-keyword">case</span> <span class="code-number">7</span>: 
+            *cod_mese = <span class="code-string">'L'</span>; 
+            <span class="code-keyword">break</span>;
+        <span class="code-keyword">case</span> <span class="code-number">8</span>: 
+            *cod_mese = <span class="code-string">'M'</span>; 
+            <span class="code-keyword">break</span>;
+        <span class="code-keyword">case</span> <span class="code-number">9</span>: 
+            *cod_mese = <span class="code-string">'P'</span>; 
+            <span class="code-keyword">break</span>;
+        <span class="code-keyword">case</span> <span class="code-number">10</span>: 
+            *cod_mese = <span class="code-string">'R'</span>; 
+            <span class="code-keyword">break</span>;
+        <span class="code-keyword">case</span> <span class="code-number">11</span>: 
+            *cod_mese = <span class="code-string">'S'</span>; 
+            <span class="code-keyword">break</span>;
+        <span class="code-keyword">case</span> <span class="code-number">12</span>: 
+            *cod_mese = <span class="code-string">'T'</span>; 
+            <span class="code-keyword">break</span>;
+        <span class="code-keyword">default</span>: 
+            *cod_mese = <span class="code-string">'X'</span>; 
+            <span class="code-keyword">break</span>;
+    }
+
+    *cod_giorno = giorno;<span class="code-comment">// per il giorno il puntatore è uguale</span> 
+}
+
+<span class="code-comment">// Funzione per cercare il codice catastale del comune</span>
+<span class="code-keyword">void</span> <span class="code-function">controllocomune</span>(<span class="code-keyword">char</span> *com, <span class="code-keyword">char</span> *comune) {
+    FILE *fd = <span class="code-function">fopen</span>(<span class="code-string">"comuni_test.txt"</span>, <span class="code-string">"r"</span>);<span class="code-comment">//apre il file comuni</span>
+    <span class="code-keyword">if</span> (fd == <span class="code-keyword">NULL</span>) {
+        <span class="code-function">printf</span>(<span class="code-string">"Errore nell'apertura del file\n"</span>);
+        <span class="code-keyword">return</span>;
+    }
+
+    <span class="code-keyword">char</span> record[<span class="code-number">100</span>];<span class="code-comment">//per immagazzinare temporaneamente i dati del comune di nscità</span>
+    <span class="code-keyword">while</span> (<span class="code-function">fscanf</span>(fd, <span class="code-string">"%s"</span>, record) != EOF) {
+        <span class="code-keyword">if</span> (<span class="code-function">strcmp</span>(comune, record) == <span class="code-number">0</span>) {
+            <span class="code-function">fscanf</span>(fd, <span class="code-string">"%s"</span>, record);<span class="code-comment">//per comparare il nome del comine che viene inserito tutto in mucsolo</span>
+            <span class="code-function">strncpy</span>(com, record, <span class="code-number">4</span>);<span class="code-comment">//nel caso vero prende il codice catastale di 4 cfre</span>
+            com[<span class="code-number">4</span>] = <span class="code-string">'\0'</span>;
+            <span class="code-keyword">break</span>;
+        }
+    }
+    <span class="code-function">fclose</span>(fd);<span class="code-comment">//chiude il file quando finisce di prendere il codce catastale</span>
+}
+
+<span class="code-comment">// Funzione per calcolare il codice di controllo</span>
+<span class="code-keyword">char</span> <span class="code-function">calcolaCodiceControllo</span>(<span class="code-keyword">char</span> codice_fiscale[]) {
+    <span class="code-keyword">int</span> valori_dispari[<span class="code-number">26</span>] = {<span class="code-number">1</span>, <span class="code-number">0</span>, <span class="code-number">5</span>, <span class="code-number">7</span>, <span class="code-number">9</span>, <span class="code-number">13</span>, <span class="code-number">15</span>, <span class="code-number">17</span>, <span class="code-number">19</span>, <span class="code-number">21</span>, <span class="code-number">2</span>, <span class="code-number">4</span>, <span class="code-number">18</span>, <span class="code-number">20</span>, <span class="code-number">11</span>, <span class="code-number">3</span>, <span class="code-number">6</span>, <span class="code-number">8</span>, <span class="code-number">12</span>, <span class="code-number">14</span>, <span class="code-number">16</span>, <span class="code-number">10</span>, <span class="code-number">22</span>, <span class="code-number">25</span>, <span class="code-number">24</span>, <span class="code-number">23</span>};
+    <span class="code-keyword">int</span> valori_pari[<span class="code-number">26</span>] = {<span class="code-number">0</span>, <span class="code-number">1</span>, <span class="code-number">2</span>, <span class="code-number">3</span>, <span class="code-number">4</span>, <span class="code-number">5</span>, <span class="code-number">6</span>, <span class="code-number">7</span>, <span class="code-number">8</span>, <span class="code-number">9</span>, <span class="code-number">10</span>, <span class="code-number">11</span>, <span class="code-number">12</span>, <span class="code-number">13</span>, <span class="code-number">14</span>, <span class="code-number">15</span>, <span class="code-number">16</span>, <span class="code-number">17</span>, <span class="code-number">18</span>, <span class="code-number">19</span>, <span class="code-number">20</span>, <span class="code-number">21</span>, <span class="code-number">22</span>, <span class="code-number">23</span>, <span class="code-number">24</span>, <span class="code-number">25</span>};
+
+    <span class="code-keyword">int</span> somma = <span class="code-number">0</span>;<span class="code-comment">//lo inizializzo a 0</span>
+    <span class="code-keyword">for</span> (<span class="code-keyword">int</span> i = <span class="code-number">0</span>; i &lt; <span class="code-number">15</span>; i++) {
+        <span class="code-keyword">char</span> c = <span class="code-function">toupper</span>(codice_fiscale[i]);
+        <span class="code-keyword">if</span> (i % <span class="code-number">2</span> == <span class="code-number">0</span>) { <span class="code-comment">// Posizione dispari</span>
+            <span class="code-keyword">if</span> (c &gt;= <span class="code-string">'0'</span> && c &lt;= <span class="code-string">'9'</span>) somma += valori_dispari[c - <span class="code-string">'0'</span>];
+            <span class="code-keyword">else</span> somma += valori_dispari[c - <span class="code-string">'A'</span>];
+        } <span class="code-keyword">else</span> { <span class="code-comment">// Posizione pari</span>
+            <span class="code-keyword">if</span> (c &gt;= <span class="code-string">'0'</span> && c &lt;= <span class="code-string">'9'</span>) somma += valori_pari[c - <span class="code-string">'0'</span>];
+            <span class="code-keyword">else</span> somma += valori_pari[c - <span class="code-string">'A'</span>];
+        }
+    }
+    <span class="code-keyword">return</span> <span class="code-string">'A'</span> + (somma % <span class="code-number">26</span>); <span class="code-comment">// Codice di controllo</span>
+}
+
+<span class="code-comment">// Funzione main</span>
+<span class="code-keyword">int</span> <span class="code-function">main</span>() {
+    <span class="code-keyword">char</span> cognomi[<span class="code-number">100</span>], nomi[<span class="code-number">100</span>], comune[<span class="code-number">100</span>];<span class="code-comment">//gli array di char usati</span>
+    <span class="code-keyword">char</span> codice_fiscale[<span class="code-number">16</span>] = {<span class="code-number">0</span>}, consonantiCognome[<span class="code-number">4</span>] = {<span class="code-number">0</span>};<span class="code-comment">//inizializzati a 0 all'interno</span>
+    <span class="code-keyword">char</span> cod_anno[<span class="code-number">3</span>], cod_mese;<span class="code-comment">//array per anno e mese che in base all'int inserito verrà messa una lettera</span>
+    <span class="code-keyword">int</span> giorno, mese, anno, cod_giorno;<span class="code-comment">//per prendere la data in intero quando viene inserita</span>
+
+    <span class="code-function">printf</span>(<span class="code-string">"Inserisci i cognomi (separati da spazi): "</span>);<span class="code-comment">//inserisce il cognome</span>
+    <span class="code-function">fgets</span>(cognomi, <span class="code-keyword">sizeof</span>(cognomi), stdin);
+    cognomi[<span class="code-function">strcspn</span>(cognomi, <span class="code-string">"\n"</span>)] = <span class="code-string">'\0'</span>;
+
+    <span class="code-function">printf</span>(<span class="code-string">"Inserisci i nomi (separati da spazi): "</span>);<span class="code-comment">//inserisce il noem</span>
+    <span class="code-function">fgets</span>(nomi, <span class="code-keyword">sizeof</span>(nomi), stdin);
+    nomi[<span class="code-function">strcspn</span>(nomi, <span class="code-string">"\n"</span>)] = <span class="code-string">'\0'</span>;
+
+    <span class="code-function">printf</span>(<span class="code-string">"Inserisci la data di nascita (gg/mm/aaaa): "</span>);<span class="code-comment">//inserisce la data</span> 
+    <span class="code-keyword">char</span> data_input[<span class="code-number">20</span>];
+    <span class="code-function">fgets</span>(data_input, <span class="code-keyword">sizeof</span>(data_input), stdin);
+    <span class="code-keyword">if</span> (<span class="code-function">sscanf</span>(data_input, <span class="code-string">"%d/%d/%d"</span>, &giorno, &mese, &anno) != <span class="code-number">3</span>) {
+        <span class="code-function">printf</span>(<span class="code-string">"Formato data non valido.\n"</span>);
+        <span class="code-keyword">return</span> <span class="code-number">1</span>;
+    }
+
+    <span class="code-function">printf</span>(<span class="code-string">"Inserisci il sesso (M/F): "</span>);<span class="code-comment">//inserisce il genere</span>
+    <span class="code-keyword">char</span> sesso_input[<span class="code-number">10</span>];
+    <span class="code-function">fgets</span>(sesso_input, <span class="code-keyword">sizeof</span>(sesso_input), stdin);
+    <span class="code-keyword">char</span> sesso = <span class="code-function">toupper</span>(sesso_input[<span class="code-number">0</span>]); <span class="code-comment">// Prende il primo carattere e lo converte in maiuscolo</span>
+    <span class="code-keyword">if</span> (sesso != <span class="code-string">'M'</span> && sesso != <span class="code-string">'F'</span>) {
+        <span class="code-function">printf</span>(<span class="code-string">"Sesso non valido.\n"</span>);
+        <span class="code-keyword">return</span> <span class="code-number">1</span>;
+    }
+
+    <span class="code-function">printf</span>(<span class="code-string">"Inserisci il nome del comune di nascita' (tutto maiuscolo): "</span>);<span class="code-comment">//inserisci il comune di nascità</span>
+    <span class="code-function">fgets</span>(comune, <span class="code-keyword">sizeof</span>(comune), stdin);
+    comune[<span class="code-function">strcspn</span>(comune, <span class="code-string">"\n"</span>)] = <span class="code-string">'\0'</span>;
+
+    <span class="code-comment">// Calcolo del codice fiscale</span>
+    <span class="code-function">estraiCons</span>(cognomi, consonantiCognome, <span class="code-number">3</span>);<span class="code-comment">//richiamo della funzione per le cononanti nel cognome</span>
+    <span class="code-keyword">if</span> (!<span class="code-function">calcolaNome</span>(nomi, codice_fiscale)) {
+        <span class="code-keyword">return</span> <span class="code-number">1</span>;
+    }
+    <span class="code-function">calcolaData</span>(giorno, mese, anno, cod_anno, &cod_mese, &cod_giorno);<span class="code-comment">//richiamo della funzione per la data</span>
+    <span class="code-keyword">if</span> (sesso == <span class="code-string">'F'</span> || sesso == <span class="code-string">'f'</span>) <span class="code-comment">//per il genere</span> {
+        cod_giorno += <span class="code-number">40</span>;
+    }
+
+    <span class="code-function">controllocomune</span>(codice_fiscale + <span class="code-number">11</span>, comune);<span class="code-comment">//richiamo della funzione per il comune</span> 
+
+    <span class="code-comment">// Costruzione del codice fiscale</span>
+    <span class="code-function">strncpy</span>(codice_fiscale, consonantiCognome, <span class="code-number">3</span>); <span class="code-comment">// Copia le prime 3 consonanti del cognome</span>
+    codice_fiscale[<span class="code-number">6</span>] = cod_anno[<span class="code-number">0</span>]; <span class="code-comment">// Inserisci la prima cifra dell'anno</span>
+    codice_fiscale[<span class="code-number">7</span>] = cod_anno[<span class="code-number">1</span>]; <span class="code-comment">// Inserisci la seconda cifra dell'anno</span>
+    codice_fiscale[<span class="code-number">8</span>] = cod_mese; <span class="code-comment">// Inserisci il codice del mese</span>
+    codice_fiscale[<span class="code-number">9</span>] = (cod_giorno / <span class="code-number">10</span>) + <span class="code-string">'0'</span>; <span class="code-comment">// Inserisci la prima cifra del giorno</span>
+    codice_fiscale[<span class="code-number">10</span>] = (cod_giorno % <span class="code-number">10</span>) + <span class="code-string">'0'</span>; <span class="code-comment">// Inserisci la seconda cifra del giorno</span>
+    codice_fiscale[<span class="code-number">15</span>] = <span class="code-function">calcolaCodiceControllo</span>(codice_fiscale); <span class="code-comment">// Calcola e inserisci il codice di controllo</span>
+    codice_fiscale[<span class="code-number">16</span>] = <span class="code-string">'\0'</span>; <span class="code-comment">// Termina la stringa</span>
+
+    <span class="code-comment">// Stampa il codice fiscale</span>
+    <span class="code-function">printf</span>(<span class="code-string">"Codice Fiscale: %s\n"</span>, codice_fiscale);
+
+    <span class="code-keyword">return</span> <span class="code-number">0</span>;
+}</code></pre>
+                            </div>
+                            
+                            <div class="project-conclusion">
+                                <h4><i class="fas fa-rocket"></i> Apprendimento e Sviluppo</h4>
+                                <p>Questo progetto mi ha permesso di applicare concretamente le conoscenze di programmazione <code class="inline-code">C</code> acquisite durante l'anno, sviluppando un'applicazione pratica e funzionale che risolve un problema reale. Ho implementato algoritmi complessi per il calcolo del codice fiscale, gestito file di dati, validato input utente e creato un'interfaccia utente semplice ma efficace.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Competenze -->
+        <section id="competenze" class="section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-tools"></i> Competenze Tecniche</h2>
+                <p class="section-subtitle"><i class="fas fa-graduation-cap"></i> Competenze acquisite nelle materie d'indirizzo durante il quarto anno:</p>
+                
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h3><i class="fas fa-code"></i> TPSI</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> HTML5 e CSS3</li>
+                            <li><i class="fas fa-check-circle"></i> Sviluppo di pagine web responsive</li>
+                            <li><i class="fas fa-check-circle"></i> Version control con GitHub</li>
+                            <li><i class="fas fa-check-circle"></i> Gestione di repository</li>
+                            <li><i class="fas fa-check-circle"></i> Deployment di siti web</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h3><i class="fas fa-network-wired"></i> Sistemi e Reti</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Architettura dei computer</li>
+                            <li><i class="fas fa-check-circle"></i> Sistema operativo Linux</li>
+                            <li><i class="fas fa-check-circle"></i> Programmazione con Arduino</li>
+                            <li><i class="fas fa-check-circle"></i> Architettura di Von Neumann</li>
+                            <li><i class="fas fa-check-circle"></i> Componenti hardware e loro funzionamento</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h3><i class="fas fa-laptop-code"></i> Informatica</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Flowchart e Flowgorithm</li>
+                            <li><i class="fas fa-check-circle"></i> Programmazione in linguaggio <code class="inline-code">C</code>:
+                                <ul class="skill-sublist">
+                                    <li><i class="fas fa-caret-right"></i> Funzioni e procedure</li>
+                                    <li><i class="fas fa-caret-right"></i> Cicli e strutture condizionali</li>
+                                    <li><i class="fas fa-caret-right"></i> Gestione file</li>
+                                    <li><i class="fas fa-caret-right"></i> Array bidimensionali</li>
+                                    <li><i class="fas fa-caret-right"></i> Array di caratteri e numeri</li>
+                                    <li><i class="fas fa-caret-right"></i> Vettori e matrici</li>
+                                    <li><i class="fas fa-caret-right"></i> Algoritmi complessi</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h3><i class="fas fa-satellite-dish"></i> Telecomunicazioni</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check-circle"></i> Circuiti e componenti elettronici</li>
+                            <li><i class="fas fa-check-circle"></i> Analisi di reti elettriche</li>
+                            <li><i class="fas fa-check-circle"></i> Principi di fisica applicati alle telecomunicazioni</li>
+                            <li><i class="fas fa-check-circle"></i> Circuiti in corrente continua</li>
+                            <li><i class="fas fa-check-circle"></i> Fondamenti di elettronica</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3><i class="fas fa-graduation-cap"></i> Portfolio Educazione Civica</h3>
+                <p><i class="fas fa-user-graduate"></i> Ramirez Giorgio - 4° INFO</p>
+                <p><i class="fas fa-calendar-alt"></i> Anno Scolastico 2025/2026</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home"><i class="fas fa-home"></i> Home</a>
+                <a href="#progetti"><i class="fas fa-project-diagram"></i> Progetti</a>
+                <a href="#competenze"><i class="fas fa-tools"></i> Competenze</a>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:giorgio.ramirez@outlook.it">giorgio.ramirez@outlook.it</a></p>
+                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Ramirez-Giorgio" target="_blank" rel="noopener">Ramirez-Giorgio</a></p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+        </div>
+    </footer>
+
+    <script src="script3inf.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+        /* Stili specifici per questa pagina */
+        .code-container {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        
+        .code-keyword { color: #569cd6; }
+        .code-function { color: #dcdcaa; }
+        .code-string { color: #ce9178; }
+        .code-comment { color: #6a9955; }
+        .code-number { color: #b5cea8; }
+        .code-preprocessor { color: #c586c0; }
+        
+        .code-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #444;
+        }
+        
+        .code-title {
+            font-size: 1rem;
+            color: #fff;
+            margin: 0;
+        }
+        
+        .copy-btn {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .copy-btn:hover {
+            background-color: #005a9e;
+        }
+        
+        .project-nav {
+            display: flex;
+            gap: 8px;
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+        
+        .project-nav-btn {
+            padding: 6px 12px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .project-nav-btn.active {
+            background-color: #2c3e50;
+            color: white;
+            border-color: #2c3e50;
+        }
+        
+        .project-nav-btn:hover {
+            background-color: #e0e0e0;
+            text-decoration: none;
+        }
+        
+        .project-nav-btn.active:hover {
+            background-color: #1a252f;
+            text-decoration: none;
+        }
+        
+        /* Nascondi tutti i progetti tranne quello attivo */
+        .project:not(.active-project) {
+            display: none;
+        }
+        
+        .active-project {
+            display: block;
+        }
+        
+        /* Aggiustamenti per immagini */
+        .profile-mini img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 3px solid #ddd;
+        }
+        
+        /* Stili per la timeline */
+        .timeline {
+            list-style: none;
+            padding-left: 20px;
+            border-left: 2px solid #3498db;
+            margin: 15px 0;
+        }
+        
+        .timeline li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .timeline li:before {
+            content: "";
+            position: absolute;
+            left: -6px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #3498db;
+        }
+        
+        /* Rimuove sottolineatura dai link nei teaser */
+        .teaser-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .teaser-link {
+            color: #007acc;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 8px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            font-size: inherit;
+        }
+        
+        /* Stile per l'elemento <code> nel testo */
+        code.inline-code {
+            background-color: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #d63384;
+            border: 1px solid #ddd;
+        }
+        
+        /* Icone nelle sezioni */
+        .section-title i,
+        .skill-header i,
+        .footer-info i,
+        .footer-links a i,
+        .footer-contact i {
+            margin-right: 10px;
+            color: #e74c3c;
+        }
+        
+        .btn i {
+            margin-left: 5px;
+        }
+        
+        .sidebar-header i {
+            margin-right: 10px;
+            color: #3498db;
+        }
+        
+        .nav-menu li a i {
+            margin-right: 8px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .dropdown > a i.fa-chevron-down {
+            margin-left: 5px;
+            font-size: 0.8em;
+        }
+        
+        /* Stile per il pulsante sidebar toggle su mobile */
+        .sidebar-toggle {
+            background: none;
+            border: none;
+            color: #2c3e50;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+        }
