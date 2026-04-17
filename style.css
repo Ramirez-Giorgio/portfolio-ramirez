@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-/* Reset e variabili */
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #e74c3c;
@@ -729,7 +727,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-=======
 * {
     margin: 0;
     padding: 0;
@@ -926,4 +923,3 @@ footer {
     background-color: #f4f4f4;
     border-radius: 8px;
 }
->>>>>>> 0b51646fc38ce6059e211580853c021325250070
